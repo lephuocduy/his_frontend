@@ -183,8 +183,8 @@ class ReceptionBloc extends Cubit<ReceptionState> {
               createOn: DateTime.now(),
               status: 1,
               entry: EntryInput(
-                wardUnitId: state.wardUnit?.id,
-                medServiceId: state.medService?.id,
+                wardUnitId: 149,
+                medServiceId: 4803,
                 priceId: 0,
                 insBenefitType: 0,
                 insBenefitRatio: 0,
