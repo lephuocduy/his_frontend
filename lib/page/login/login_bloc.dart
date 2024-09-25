@@ -62,7 +62,7 @@ class LoginBloc extends Cubit<LoginState> {
 
     try {
       final data = await _settingRepository.login(LoginInput(
-        account: 'lanhh',
+        account: state.account,
         password: 'c4ca4238a0b923820dcc509a6f75849b',
       ));
 
