@@ -79,37 +79,48 @@ class SettingRepository {
 
   Future<List<ItemBaseModel>> getMedicalExaminationService() async {
     // final response = await _service.getMedicalExaminationService();
-    // return response.map((e) => ItemBaseModel.fromApiMedicalExaminationServiceModel(e)).toList();
+    // return response
+    //     .map((e) => ItemBaseModel.fromApiMedicalExaminationServiceModel(e))
+    //     .toList();
     return [
-      ItemBaseModel(
-          code: 'xnhh450', name: 'Đếm số lượng tế bào gốc (stem cell, CD34)'),
-      ItemBaseModel(
-          code: 'xnhh469',
-          name: 'Định danh kháng thể kháng HLA bằng kỹ thuật ELISA'),
-      ItemBaseModel(
-          code: 'xnhh468',
-          name: 'Định danh kháng thể kháng HLA bằng kỹ thuật luminex'),
-      ItemBaseModel(code: 'xnhh427', name: 'Định lượng Acid Folic'),
-      ItemBaseModel(code: 'xnhh50', name: 'Định lượng Anti Xa'),
-      ItemBaseModel(
-          code: 'xnhh400',
-          name: 'Định lượng AT/AT III (Anti thrombin/ Anti thrombinIII)'),
-      ItemBaseModel(code: 'xnhh428', name: 'Định lượng Beta 2 Microglobulin'),
-      ItemBaseModel(
-          code: 'xnhh423',
-          name:
-              'Định lượng chất ức chế hoạt hóa Plasmin (PAI: Plasmin Activated Inhibitor)'),
-      ItemBaseModel(
-          code: 'xnhh457',
-          name: 'Định lượng chất ức chế hoạt hóa Plasmin 1 (PAI-1)'),
-      ItemBaseModel(
-          code: 'xnhh458',
-          name: 'Định lượng chất ức chế hoạt hóa Plasmin 2 (PAI-2)'),
-      ItemBaseModel(code: 'xnhh429', name: 'Định lượng Cyclosporin A'),
-      ItemBaseModel(
-          code: 'xnhh459',
-          name: 'Định lượng D-Dimer bằng kỹ thuật miễn dịch hóa phát quang'),
-      ItemBaseModel(code: 'xnhh435', name: 'Định lượng EPO (Erythropoietin)'),
+      ItemBaseModel(code: "KCC1", name: "Khám Nội [Cấp Cứu]"),
+      ItemBaseModel(code: "KCC01", name: "Khám Cấp Cứu (lần 2)"),
+      ItemBaseModel(code: "kdl", name: "Khám Da Liễu"),
+      ItemBaseModel(code: "KDLNTK01", name: "Khám Da Liễu (lần 2)"),
+      ItemBaseModel(code: "KDD1", name: "Khám Dinh Dưỡng"),
+      ItemBaseModel(code: "KDD03", name: "Khám Dinh Dưỡng ( lần 2)"),
+      ItemBaseModel(code: "KDY2", name: "Khám YHCT"),
+      ItemBaseModel(code: "KDY01", name: "Khám Đông Y (lần 2)"),
+      ItemBaseModel(code: "khh", name: "Khám Hô Hấp"),
+      ItemBaseModel(code: "KHOHAP01", name: "Khám Hô Hấp (lần 2)"),
+      ItemBaseModel(code: "KLCK", name: "Khám Liên Chuyên Khoa"),
+      ItemBaseModel(code: "KMAT2", name: "Khám Mắt"),
+      ItemBaseModel(code: "KMAT01", name: "Khám Mắt (lân 2)"),
+      ItemBaseModel(code: "KHH1", name: "Khám Hô Hấp (Lần 1)"),
+      ItemBaseModel(code: "KHN1", name: "Khám Nội (Lần 1)"),
+      ItemBaseModel(code: "KDK1", name: "Khám Dinh Dưỡng (Lần 1)"),
+      ItemBaseModel(code: "KDL01", name: "Khám Da Liễu (Lần 1)"),
+      ItemBaseModel(code: "KMT1", name: "Khám Mắt (Lần 1)"),
+      ItemBaseModel(code: "KMT2", name: "Khám Mắt (Lần 3)"),
+      ItemBaseModel(code: "KHH2", name: "Khám Hô Hấp (Lần 2)"),
+      ItemBaseModel(code: "KYN1", name: "Khám YHCT (Lần 1)"),
+      ItemBaseModel(code: "KYN2", name: "Khám YHCT (Lần 2)"),
+      ItemBaseModel(code: "KDC1", name: "Khám Dinh Dưỡng (Lần 3)"),
+      ItemBaseModel(code: "KDN1", name: "Khám Đông Y (Lần 1)"),
+      ItemBaseModel(code: "KDK2", name: "Khám Dinh Dưỡng (Lần 4)"),
+      ItemBaseModel(code: "KHT1", name: "Khám Hô Hấp (Lần 3)"),
+      ItemBaseModel(code: "KHT2", name: "Khám Hô Hấp (Lần 4)"),
+      ItemBaseModel(code: "KDN2", name: "Khám Đông Y (Lần 2)"),
+      ItemBaseModel(code: "KMT3", name: "Khám Mắt (Lần 4)"),
+      ItemBaseModel(code: "KMT4", name: "Khám Mắt (Lần 5)"),
+      ItemBaseModel(code: "KHD1", name: "Khám Hệ Thống (Lần 1)"),
+      ItemBaseModel(code: "KHD2", name: "Khám Hệ Thống (Lần 2)"),
+      ItemBaseModel(code: "KHT3", name: "Khám Hô Hấp (Lần 5)"),
+      ItemBaseModel(code: "KHN2", name: "Khám Nội (Lần 2)"),
+      ItemBaseModel(code: "KHN3", name: "Khám Nội (Lần 3)"),
+      ItemBaseModel(code: "KTH1", name: "Khám Tâm Huyết (Lần 1)"),
+      ItemBaseModel(code: "KTH2", name: "Khám Tâm Huyết (Lần 2)"),
+      ItemBaseModel(code: "KTH3", name: "Khám Tâm Huyết (Lần 3)"),
     ];
   }
 }

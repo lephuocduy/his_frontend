@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:collection/collection.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:his_frontend/core/utils/date_time.dart';
 import 'package:his_frontend/data/repositories/reception/models/input/create_patient_input/create_patient_input.dart';
@@ -89,6 +90,7 @@ class ReceptionBloc extends Cubit<ReceptionState> {
         _settingRepository.getBenefit(),
         _settingRepository.getClinic(),
         _settingRepository.getMedicalExaminationService(),
+        _settingRepository.getDistrict("79"),
       ]);
 
       final nationList = value[0];
@@ -100,6 +102,7 @@ class ReceptionBloc extends Cubit<ReceptionState> {
       final benefitList = value[6];
       final clinicList = value[7];
       final medicalExaminationServiceList = value[8];
+      final districtList = value[9];
 
       emit(state.copyWith(
         receptionList: receptionList,
@@ -114,7 +117,11 @@ class ReceptionBloc extends Cubit<ReceptionState> {
         benefitList: benefitList,
         clinicList: clinicList,
         medicalExaminationServiceList: medicalExaminationServiceList,
+        districtList: districtList,
         //
+        country: nationList.firstWhereOrNull((e) => e.code == "VN"),
+        ethnic: ethnicList.firstWhereOrNull((e) => e.code == "01"),
+        city: cityList.firstWhereOrNull((e) => e.code == "79"),
         benefit: benefitList.first,
       ));
     } catch (e) {
