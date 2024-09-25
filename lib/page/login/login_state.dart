@@ -28,4 +28,8 @@ class LoginState {
     this.isLoading = false,
     this.message,
   });
+
+  bool get isValid {
+    return (account ?? '').isNotEmpty && (password ?? '').isNotEmpty;
+  }
 }

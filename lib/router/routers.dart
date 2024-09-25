@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:his_frontend/page/home/home_page.dart';
 import 'package:his_frontend/page/login/login_page.dart';
+import 'package:his_frontend/page/reception/info_patient/info_patient_page.dart';
 import 'package:his_frontend/page/reception/reception_page.dart';
 
 final router = GoRouter(
@@ -14,6 +15,12 @@ final router = GoRouter(
         GoRoute(
           path: 'reception',
           builder: (context, state) => const ReceptionPage(),
+          routes: <RouteBase>[
+            GoRoute(
+              path: 'info-patient',
+              builder: (context, state) => const InfoPatientPage(),
+            ),
+          ],
         ),
       ],
     ),

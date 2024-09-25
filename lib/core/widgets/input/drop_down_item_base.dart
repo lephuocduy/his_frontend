@@ -102,7 +102,7 @@ class _DropdownItemBaseState extends State<DropdownItemBase> {
               width: widget.width,
               child: DropdownButtonFormField<ItemBaseModel>(
                 isExpanded: true,
-                dropdownColor: Colors.white,
+                dropdownColor: AppColor.white,
                 value: _selectedItem,
                 items: widget.items
                     .map(
@@ -166,7 +166,8 @@ class _DropdownItemBaseState extends State<DropdownItemBase> {
                       color: AppColor.colorBorderGrey,
                     ),
                   ),
-                  fillColor: AppColor.c_FFFFFF,
+                  fillColor:
+                      widget.isEnabled ? Colors.white : AppColor.c_F5F5F5,
                   filled: true,
                 ),
               ),

@@ -167,7 +167,10 @@ class _TextFieldInputPasswordState extends State<TextFieldInputPassword> {
                         : InputBorder.none,
                     hintText: widget.hintText,
                     hintMaxLines: 2,
-                    fillColor: widget.fillColor ?? AppColor.c_FFFFFF,
+                    fillColor: widget.fillColor ??
+                        (widget.isEnabled
+                            ? AppColor.c_FFFFFF
+                            : AppColor.c_F5F5F5),
                     hintStyle: textTheme.labelLarge?.copyWith(
                       color: AppColor.c_979797,
                     ),

@@ -28,6 +28,13 @@ class AppIcon {
     size: size,
   );
 
+  // Lưu
+  static Icon save = const Icon(
+    Icons.save,
+    color: AppColor.white,
+    size: size,
+  );
+
   // Sửa nhưng mà màu xanh
   static Icon editFoundation = const Icon(
     Icons.edit,
