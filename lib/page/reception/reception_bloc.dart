@@ -236,9 +236,9 @@ class ReceptionBloc extends Cubit<ReceptionState> {
     ItemBaseModel? wardUnit,
     ItemBaseModel? medService,
   }) async {
-    var districtList = state.districtList;
+    var districtList = List<ItemBaseModel>.from(state.districtList);
     var districtChange = district ?? state.district;
-    var wardList = state.wardList;
+    var wardList = List<ItemBaseModel>.from(state.wardList);
     var wardChange = ward ?? state.ward;
     if (city != null && city != state.city) {
       districtList = await _settingRepository.getDistrict(city.code ?? '01');

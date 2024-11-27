@@ -123,20 +123,20 @@ class _ReceptionPageState extends State<ReceptionPage> {
                       ],
                     ),
                   ),
-                  if (state.isLoading)
-                    Container(
-                      color: Colors.black
-                          .withOpacity(0.1), // Semi-transparent overlay
-                      child: Center(
-                        child: Text(
-                          'Đang xử lí dữ liệu...',
-                          style: textTheme.bodyLarge?.copyWith(
-                            color: AppColor.c_006EA9,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                      ),
-                    ),
+                  // if (state.isLoading)
+                  //   Container(
+                  //     color: Colors.black
+                  //         .withOpacity(0.1), // Semi-transparent overlay
+                  //     child: Center(
+                  //       child: Text(
+                  //         'Đang xử lí dữ liệu...',
+                  //         style: textTheme.bodyLarge?.copyWith(
+                  //           color: AppColor.c_006EA9,
+                  //           fontWeight: FontWeight.w700,
+                  //         ),
+                  //       ),
+                  //     ),
+                  //   ),
                 ],
               ),
             );
